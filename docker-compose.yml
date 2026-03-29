@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  videosdk-auth:
+    build: .
+    container_name: videosdk-auth
+    restart: always
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
